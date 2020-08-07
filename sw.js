@@ -5,7 +5,7 @@ const CACHE_DYNAMIC_NAME = 'dynamic-v1';
 const CACHE_INMUTABLE_NAME = 'inmutable-v1';
 
 const APPCHELL = [
-    '/',
+    //  '/',
     '/index.html',
     '/css/style.css',
     '/img/favicon.ico',
@@ -32,15 +32,15 @@ self.addEventListener('install', e => {
         .then(cache => {
             return cache.addAll([
                 '/',
-                '/index.html',
-                '/css/style.css',
-                '/img/favicon.ico',
-                '/img/avatars/spiderman.jpg',
-                '/img/avatars/ironman.jpg',
-                '/img/avatars/wolverine.jpg',
-                '/img/avatars/thor.jpg',
-                '/img/avatars/hulk.jpg',
-                '/js/app.js',
+                'index.html',
+                'css/style.css',
+                'img/favicon.ico',
+                'img/avatars/spiderman.jpg',
+                'img/avatars/ironman.jpg',
+                'img/avatars/wolverine.jpg',
+                'img/avatars/thor.jpg',
+                'img/avatars/hulk.jpg',
+                'js/app.js',
                 'js/sw-utils.js'
             ]);
         });
@@ -50,8 +50,8 @@ self.addEventListener('install', e => {
             'https://fonts.googleapis.com/css?family=Quicksand:300,400',
             'https://fonts.googleapis.com/css?family=Lato:400,300',
             'https://use.fontawesome.com/releases/v5.3.1/css/all.css',
-            '/css/animate.css',
-            '/js/libs/jquery.js'
+            'css/animate.css',
+            'js/libs/jquery.js'
         ]));
 
 
