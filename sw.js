@@ -31,7 +31,7 @@ self.addEventListener('install', e => {
     const cachestatic = caches.open(CACHE_STATIC_NAME)
         .then(cache => {
             return cache.addAll([
-                '/',
+                // '/',
                 'index.html',
                 'css/style.css',
                 'img/favicon.ico',
